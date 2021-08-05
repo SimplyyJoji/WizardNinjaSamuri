@@ -10,12 +10,13 @@ namespace WizNinSam
            Dexterity = 175;
        }
 
-        public int Meditate(Samuri Health)
+        public int Steal(Human target)
     {
-
-        this.Health = 200;
-        Console.WriteLine($"Saw flashback as child now health is {this.Health}");
-        return this.Health;
+        int dmg = 5;
+        target.Health = dmg;
+        this.Health = dmg;
+        Console.WriteLine($"Here is my trap card");
+        return target.Health;
     }
 
 
