@@ -14,7 +14,7 @@ namespace WizNinSam
 
     public int Heal(Human target)
     {
-        int heal = Intelligence * 10;
+        int heal = Intelligence * 5;
         target.Health += heal;
         Console.WriteLine($"I healed for {heal} for a cost.");
         return target.Health;
